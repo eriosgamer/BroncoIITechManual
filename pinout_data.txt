@@ -1,0 +1,60 @@
+1|KEEP ALIVE POWER (KAPWR)|Alimentación continua para mantener la memoria del vehículo.|Multímetro|Medir voltaje constante con motor apagado y en marcha|5V - 14V|Y
+2|STOP LAMP SWITCH INPUT (BOO)|Recibe la señal del interruptor de la luz de freno.|Multímetro|Verificar si cambia de estado al presionar el pedal de freno|Estado de encendido/apagado|LGN
+3|VEHICLE SPEED SENSOR SIGNAL (VSS+)|Recibe la señal del sensor de velocidad del vehículo.|Osciloscopio|Observar la forma de onda para verificar la frecuencia y amplitud|Variaciones de voltaje y frecuencia|DGN/W
+4|START INPUT / IGNITION DIAGNOSTIC MONITOR (IDM/FTO)|Señal de inicio del motor o monitor de diagnóstico de encendido.|Osciloscopio|Observar la forma de onda para verificar la sincronización y duración|Señal de encendido en forma de onda|DGN/Y
+5|NOT USED|Sin uso|||||
+6|VEHICLE SPEED SENSOR GROUND (VSS-)|Tierra para el sensor de velocidad del vehículo.|Multímetro|Verificar la continuidad entre este pin y tierra|Continuidad|LGN/PU
+7|ENGINE COOLANT TEMP SENSOR (ECT)|Recibe la señal del sensor de temperatura del refrigerante del motor.|Multímetro|Ver cómo cambia el voltaje con la temperatura|Variaciones de voltaje|LGN/Y
+8|FUEL PUMP MONITOR (FPM)|Monitorea la señal del relé de la bomba de combustible.|Multímetro|Verificar si hay voltaje cuando se activa el relé|Voltaje presente/ausente|O/LBU
+9|VIP TEST CONECTOR DATA- (DLC)|Conexión de datos de diagnóstico.|Dependerá de su función específica|Dependerá de su función específica|Dependerá de su función específica|PK/LBU
+10|A/C CYCLE SWITCH INPUT (ACC)|Recibe la señal del interruptor del ciclo de aire acondicionado.|Multímetro|Verificar si cambia de estado cuando se activa el aire acondicionado|Estado de encendido/apagado|BK/Y
+11|THERMACTOR AIR DIVERTER SOLENOID (TAD)|Controla el solenoide de desvío de aire del sistema Thermactor.|Osciloscopio|Observar la forma de onda para verificar el ciclo de trabajo|Señales PWM|W/BK
+12|LOW RANGE SWITCH INDICATOR LAMP (4X4)|Indica el estado del interruptor de rango bajo (4x4).|Voltímetro|Verificar si hay voltaje cuando se activa el interruptor|Voltaje presente/ausente|LBN/O
+13|NOT USED|Sin uso|||||
+14|NOT USED|Sin uso|||||
+15|NOT USED|Sin uso|||||
+16|IGNITION GROUND|Conexión a tierra para el sistema de encendido.|Multímetro|Verificar la continuidad entre este pin y tierra|Continuidad|BK
+17|CHECK ENGINE LAMP (CEL)|Indica el estado de la luz de verificación del motor.|Dependerá de su función específica|Dependerá de su función específica|Dependerá de su función específica|T/R
+18|NOT USED|Sin uso|||||
+19|SHIFT SOLENOID #2 (E4OD)|Controla el solenoide de cambio #2 en transmisiones E4OD.|Osciloscopio|Observar la forma de onda para verificar el ciclo de trabajo|Señales PWM|PK/O
+20|ECC MODULE CASE GROUND|Conexión a tierra del módulo de control del motor.|Multímetro|Verificar la continuidad entre este pin y tierra|Continuidad|BK/LGN
+21|IDLE AIR CONTROL SOLENOID (IAC)|Controla el solenoide de control de aire de ralentí.|Osciloscopio|Observar la forma de onda para verificar el ciclo de trabajo|Señales PWM|GY/W
+22|FUEL PUMP RELAY OUTPUT (FP)|Salida del relé de la bomba de combustible.|Voltímetro|Verificar si hay voltaje cuando se activa el relé|Voltaje presente/ausente|T/LGN
+23|KNOCK SENSOR|Recibe la señal del sensor de detonación.|Osciloscopio|Observar la forma de onda para verificar la frecuencia y amplitud|Variaciones de voltaje y frecuencia|LGN/BK
+24|POWER STEERING PRESSURE SWITCH INPUT|Recibe la señal del interruptor de presión del fluido de dirección asistida.|Multímetro|Verificar si cambia de estado con la presión del fluido|Estado de encendido/apagado|Y/LGN
+25|AIR CHARGE TEMPERATURE SENSOR (ACT)|Recibe la señal del sensor de temperatura de carga de aire.|Multímetro|Ver cómo cambia el voltaje con la temperatura|Variaciones de voltaje|LGN/PU
+26|REFERENCE VOLTAGE OUTPUT 5+VDC (VREF)|Salida de voltaje de referencia de 5 V.|Voltímetro|Verificar la salida de voltaje|5V|O/W
+27|EGR VALVE POSITION SENSOR (EVP)|Recibe la señal del sensor de posición de la válvula EGR.|Osciloscopio|Observar la forma de onda para verificar la relación entre la posición de la válvula y el voltaje|Variaciones de voltaje y posición de la válvula|BN
+28|VIP TEST CONNECTOR DATA+ (DLC)|Conexión de datos de diagnóstico.|Dependerá de su función específica|Dependerá de su función específica|Dependerá de su función específica|LBN/O
+29|HEATED EXHAUST GAS OXYGEN SENSOR (HEGO)|Recibe la señal del sensor de oxígeno calentado en el escape.|Multímetro|Ver cómo cambia el voltaje con la mezcla de combustible|Variaciones de voltaje|DGN/PU
+30|MANUAL LEVER POSITION SENSOR(E4OD) OR PARK NEUTRAL POSITION OR CLUTCH INTERLOCK SWITCH|Recibe la señal del interruptor de posición de la palanca de cambios o del interruptor de posición de la palanca de cambios automática.|Dependerá de su función específica|Dependerá de su función específica|Dependerá de su función específica|W/PK
+31|CANISTER PURGE SOLENOID (CANP)|Controla el solenoide de purga del canister.|Multímetro|Verificar si se activa cuando se inicia el sistema de purga|Estado de encendido/apagado|PK/LBU
+32|OVERDRIVE CANCEL INDICATOR LAMP (TCIL)(E4OD)|Indica el estado de la luz de cancelación de la sobremarcha en transmisiones E4OD.|Voltímetro|Verificar si hay voltaje cuando se activa la cancelación de la sobremarcha|Voltaje presente/ausente|DBU/Y
+33|EGR VALVE REGULATOR SOLENOID (EVR)|Controla el solenoide regulador de la válvula EGR.|Osciloscopio|Observar la forma de onda para verificar el ciclo de trabajo|Señales PWM|DGN
+34|NOT USED|Sin uso|||||
+35|NOT USED|Sin uso|||||
+36|SPARK OUT (SPOUT)|Controla la sincronización del encendido.|Osciloscopio|Observar la forma de onda para verificar la sincronización|Señal de encendido en forma de onda|Y/LGN
+37|POWER|Alimentación principal para la computadora del vehículo.|Multímetro|Verificar la continuidad y el voltaje|12V|R
+38|ELECTRONIC PRESS CONTROL SOLENOID (EPC) (E4OD)|Controla el solenoide de control de presión electrónica en transmisiones E4OD.|Osciloscopio|Observar la forma de onda para verificar el ciclo de trabajo|Señales PWM|GY/Y
+39|NOT USED|Sin uso|||||
+40|GROUND|Conexión a tierra.|Multímetro|Verificar la continuidad y resistencia|Continuidad y resistencia baja|BK/LGN
+41|OVERDRIVE CANCEL SWITCH (TCS)(E4OD)|Interruptor de cancelación de sobremarcha en transmisiones E4OD.|Voltímetro|Verificar si hay voltaje cuando se activa la cancelación de la sobremarcha|Voltaje presente/ausente|DBU/Y
+42|TRANSMISSION OIL TEMP SENSOR (TFT)|Recibe la señal del sensor de temperatura del aceite de la transmisión.|Multímetro|Ver cómo cambia el voltaje con la temperatura del aceite|Variaciones de voltaje|PU
+43|A/C DEMAND INPUT (ACD)|Recibe la señal de demanda del sistema de aire acondicionado.|Multímetro|Verificar si cambia de estado cuando se activa el aire acondicionado|Estado de encendido/apagado|PU
+44|NOT USED|Sin uso|||||
+45|MANIFOLD ABSOLUTE PRESSURE SENSOR (MAP)|Recibe la señal del sensor de presión absoluta del múltiple de admisión.|Multímetro|Ver cómo cambia el voltaje con la presión del múltiple de admisión|Variaciones de voltaje|DBU/LGN
+46|SENSOR SIGNAL RETURN (SIGRET)|Tierra de señal común para los sensores.|Multímetro|Verificar la continuidad y resistencia baja|Continuidad y resistencia baja|BK/W
+47|THROTTLE POSITION SENSOR (TPS)|Recibe la señal del sensor de posición del acelerador.|Osciloscopio|Observar la forma de onda para verificar la relación entre la posición del acelerador y el voltaje|Variaciones de voltaje y posición del acelerador|DGN/LGN
+48|VIP TEST INPUT (STI)|Conexión de entrada de datos de diagnóstico.|Dependerá de su función específica|Dependerá de su función específica|Dependerá de su función específica|W/R
+49|HEGO GROUND|Conexión a tierra para el sensor de oxígeno calentado en el escape.|Multímetro|Verificar la continuidad y resistencia baja|Continuidad y resistencia baja|O
+50|NOT USED|Sin uso|||||
+51|THERMACTOR AIR BYPASS SOLENOID (TAB)|Controla el solenoide de derivación de aire del sistema Thermactor.|Osciloscopio|Observar la forma de onda para verificar el ciclo de trabajo|Señales PWM|W/R
+52|SHIFT SOLENOID #1 (E4OD)|Controla el solenoide de cambio #1 en transmisiones E4OD.|Osciloscopio|Observar la forma de onda para verificar el ciclo de trabajo|Señales PWM|T/LBU
+53|TORQUE CONVERTER CLUTCH SOLENOID (TCC)(E4OD)|Controla el solenoide del embrague del convertidor de par en transmisiones E4OD.|Osciloscopio|Observar la forma de onda para verificar el ciclo de trabajo|Señales PWM|W
+54|WAC (WOT A/C Cut-off switch or circuit)|Interruptor o Circuito de Corte del Aire Acondicionado|Multímetro|Medir voltaje DC|0V-12V|R
+55|COAST CLUTCH SOLENOID (E4OD)|Controla el solenoide del embrague de la costa en transmisiones E4OD.|Osciloscopio|Observar la forma de onda para verificar el ciclo de trabajo|Señales PWM|PK/Y
+56|PROFILE IGNITION PICKUP (PIP)|Recibe la señal del sensor de captación de encendido del perfil.|Osciloscopio|Observar la forma de onda para verificar la sincronización|Señal de encendido en forma de onda|DBU
+57|POWER|Alimentación principal para la computadora del vehículo.|Multímetro|Verificar la continuidad y el voltaje|12V|R
+58|INJECTOR BANK 1 (1,3,5) OR (1,4,5,8)|Salida del inyector del banco 1 en motores V6 o V8.|Multímetro|Verificar si hay pulsos de inyección al arrancar el motor|Pulsos de voltaje|W
+59|INJECTOR BANK 2 (2,4,6) OR (2,6,7,3)|Salida del inyector del banco 2 en motores V6 o V8.|Multímetro|Verificar si hay pulsos de inyección al arrancar el motor|Pulsos de voltaje|T
+60|GROUND|Conexión a tierra.|Multímetro|Verificar la continuidad y resistencia|Continuidad y resistencia baja|BK/LGN

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EEC-IV Pinout</title>
+    <style>
+        body {
+            background-color: #b8bbd4;
+            color: #000000;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            border: 1px solid #ddd;
+            font-family: Arial, sans-serif;
+            color: #000000;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #424242;
+            position: sticky;
+            top: 0;
+        }
+        input[type="text"] {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            box-sizing: border-box;
+        }
+        .color-BK {
+            color: #000000; /* Blanco */
+        }
+        .color-BU {
+            color: #2196F3; /* Azul */
+        }
+        .color-BN {
+            color: #795548; /* Marrón */
+        }
+        .color-PU {
+            color: #9C27B0; /* Púrpura */
+        }
+        .color-R {
+            color: #F44336; /* Rojo */
+        }
+        .color-GY {
+            color: #9E9E9E; /* Gris */
+        }
+        .color-O {
+            color: #FF9800; /* Naranja */
+        }
+        .color-W {
+            color: #FFFFFF; /* Blanco */
+        }
+        .color-Y {
+            color: #FFEB3B; /* Amarillo */
+        }
+        .color-PK {
+            color: #e24c7e; /* Rosa */
+        }
+        .color-GN {
+            color: #4CAF50; /* Verde */
+        }
+        .color-T {
+            color: #c6b586; /* Beige */
+        }
+        .color-LGN {
+            color: #8BC34A; /* Verde claro */
+        }
+        .color-DGN {
+            color: #2b5c15; /* Gris oscuro */
+        }
+        /* Añade más clases de colores según sea necesario */
+        .tooltip {
+            position: relative;
+            display: inline-block;
+        }
+
+        .tooltip .tooltip-text {
+            visibility: hidden;
+            width: auto;
+            background-color: #424242; /* Color de fondo del tooltip */
+            color: #ffffff; /* Color del texto del tooltip */
+            text-align: center;
+            border-radius: 6px;
+            padding: 5px 10px; /* Ajusta el relleno del tooltip según sea necesario */
+            position: absolute;
+            z-index: 1;
+            bottom: 125%;
+            left: 50%;
+            transform: translateX(-50%); /* Centra el tooltip horizontalmente */
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .tooltip:hover .tooltip-text {
+            visibility: visible;
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+
+<h2>EEC-IV Pinout</h2>
+
+<input type="text" id="pinFilter" placeholder="Filtrar por número de pin..." onkeyup="filterTable()">
+
+<table id="pinTable">
+    <thead>
+    <tr>
+        <th># Pin</th>
+        <th>Nombre</th>
+        <th>Descripción</th>
+        <th>Instrumento de Medición</th>
+        <th>Forma de Medirlo</th>
+        <th>Valores Esperados</th>
+        <th>Color de Cable</th>
+    </tr>
+    </thead>
+    <tbody>
+    {% for item in pin_data %}
+    <tr>
+        <td>{{ item['pin'] }}</td>
+        <td>{{ item['nombre'] }}</td>
+        <td>{{ item['descripcion'] }}</td>
+        <td>{{ item['instrumento'] }}</td>
+        <td>{{ item['forma'] }}</td>
+        <td>{{ item['valores'] }}</td>
+        <td>
+            <!-- Añade la clase tooltip al contenedor y la clase tooltip-text al texto del tooltip -->
+            <div class="tooltip">
+                <span class="color-{{ item['color'].split('/')[0] }}">{{ item['color'].split('/')[0] }}</span> /
+                <span class="color-{{ item['color'].split('/')[1] }}">{{ item['color'].split('/')[1] }}</span>
+                <!-- Agrega el tooltip aquí -->
+                <span class="tooltip-text">{{ color_names[item['color'].split('/')[0]] }} / {{ color_names[item['color'].split('/')[1]] }}</span>
+            </div>
+        </td>
+    </tr>
+    {% endfor %}
+    </tbody>
+</table>
+
+<script>
+
+    function filterTable() {
+        var input, filter, table, tr, td, i, txtValue;
+        input = document.getElementById("pinFilter");
+        filter = input.value.toUpperCase();
+        table = document.getElementById("pinTable");
+        tr = table.getElementsByTagName("tr");
+        for (i = 0; i < tr.length; i++) {
+            td = tr[i].getElementsByTagName("td")[0];
+            if (td) {
+                txtValue = td.textContent || td.innerText;
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                    tr[i].style.display = "";
+                } else {
+                    tr[i].style.display = "none";
+                }
+            }
+        }
+    }
+</script>
+
+</body>
+</html>
